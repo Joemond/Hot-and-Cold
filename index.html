@@ -17,39 +17,57 @@
             display();
         }
 
-        function guesses() {
+        function play() {
             guess = 50;
 
             if (1 < guess && guess < 100) { 
+                alert("");
+            }
                 else if (guess > 100) {
-                    alert("The number is over 100");
+                    alert("The number is over 100. Please try again");
                     end;
                 }
                 else if (guess < 1) {
-                    alert("This number is below 1");
+                    alert("This number is below 1. Please try again");
                     end;
                 }
                 if (guess = randomNum) {
-                    alert("You got it!")
+                    alert("You got it!");
                     end;
                 }
-                else {
-                    alert("Wrong! Guess again.")
+                if (guess > randomNum + 55 || guess < randomNum + 55) {
+                    alert("Very cold");
+                    }
+                    else if (guess > randomNum + 41 || guess < randomNum + 41) {
+                        alert("Cold");
+                    }
+                    else if (guess > randomNum + 31 || guess < randomNum + 31) {
+                        alert("Very Cool")
+                    }
+                    else if (guess > randomNum + 21 || guess < randomNum + 21) {
+                        alert("Cool");
+                    }
+                    else if (guess > randomNum + 16 || guess < randomNum + 16) {
+                        alert("Warm");
+                    }
+                    else if (guess > randomNum + 9 || guess < randomNum + 9) {
+                        alert("Very Warm");
+                    }
+                    else if (guess > randomNum + 6 || guess < randomNum + 6) {
+                        alert("Hot");
+                    }
+                    else if (guess > randomNum + 5 || guess < randomNum + 5) {
+                        alert("Very Hot");
+                    }
                 }
-
-            }
-            if (randomNum > guess && randomNum < guess) {
-                else if (randomNum > guess) {
-                    
-                }
-            }
-        }
 
         function commit() {
 
         }
         
-
+        function reset() {
+            
+        }
         function display() {
 
         }
